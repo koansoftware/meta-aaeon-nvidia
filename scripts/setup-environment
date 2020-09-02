@@ -43,16 +43,16 @@ directory <build-dir>. The build directory configuration is unchanged.
 "
 
     ls sources/*/conf/machine/*.conf > /dev/null 2>&1
-    ls sources/meta-st-openstlinux/conf/distro/*.conf > /dev/null 2>&1
+    ls sources/*/conf/distro/*.conf > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo -e "
 Supported machines: `echo; ls sources/*/conf/machine/*.conf \
 | sed s/\.conf//g | sed -r 's/^.+\///' | xargs -I% echo -e "\t%"`
-Available ST's distros: `echo; ls sources/meta-st-openstlinux/conf/distro/*.conf \
+Available Aaeon distros: `echo; ls sources/*/conf/distro/*.conf \
 | sed s/\.conf//g | sed -r 's/^.+\///' | xargs -I% echo -e "\t%"`
 Examples:
 - To create a new Yocto build directory:
-  $ MACHINE=stm32mp1-disco DISTRO=openstlinux-eglfs source $PROGNAME build
+  $ MACHINE=jetson-xavier DISTRO=poky source $PROGNAME build
 - To use an existing Yocto build directory:
   $ source $PROGNAME build
 "
@@ -116,7 +116,7 @@ if [ -z "$SDKMACHINE" ]; then
     SDKMACHINE='i686'
 fi
 
-if [ "$build_dir_setup_enabled" = "true" ] && [ -z "$DISTRO" ]; then
+if [ "$ build_dir_setup_enabled" = "true" ] && [ -z "$DISTRO" ]; then
     usage
     echo -e "ERROR: You must set DISTRO when creating a new build directory."
     clean_up
@@ -144,7 +144,7 @@ if [ "$build_dir_setup_enabled" = "true" ]; then
     mv conf/local.conf conf/local.conf.sample
 
     # Generate the local.conf based on the Yocto defaults
-    TEMPLATES=$CWD/sources/base/conf 
+    TEMPLATES=$CWD/sources/meta-aaeonboxer/conf/template
     grep -v '^#\|^$' conf/local.conf.sample > conf/local.conf
     cat >> conf/local.conf <<EOF
 DL_DIR ?= "\${BSPDIR}/downloads/"
@@ -181,6 +181,7 @@ For more information about OpenEmbedded see their website:
 You can now run 'bitbake <target>'
 Common targets are:
     core-image-minimal
+    core-image-minimal-xfce
     meta-toolchain
 EOF
 
