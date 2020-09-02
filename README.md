@@ -6,12 +6,14 @@ First release
 
 Boards supported:
 
-![BOXER-8251AI](https://www.aaeon.com/_media/tmb_200511_tgvakc.jpg) ![BOXER-8221AI](https://www.aaeon.com/_media/tmb_200323_6rboad.jpg) ![BOXER-8220AI](https://www.aaeon.com/_media/tmb_200323_s2ho8e.jpg)
+![BOXER-8251AI](https://www.aaeon.com/_media/tmb_200511_tgvakc.jpg) ![BOXER-8221AI](https://www.aaeon.com/_media/tmb_200323_6rboad.jpg) 
+![BOXER-8250AI](https://www.aaeon.com/_media/tmb_200511_eqn31v.jpg) ![BOXER-8220AI](https://www.aaeon.com/_media/tmb_200323_s2ho8e.jpg)
 
 [AAEON NVIDIA AI Solutions](https://www.aaeon.com/en/c/aaeon-nvidia-ai-solutions)
 
 * Aaeon BOXER-8220AI
 * Aaeon BOXER-8221AI
+* Aaeon BOXER-8250AI
 * Aaeon BOXER-8251AI
 
 This layer depends on:
@@ -38,7 +40,7 @@ $ MACHINE=... DISTRO=aaeon source setup-environment MY_BUILDDIR
 Machines to use are:
 
 * `jetson-nano-qspi-sd` for BOXER-8220AI and BOXER-8221AI
-* `jetson-xavier-nx-devkit-emmc` for BOXER-8251AI
+* `jetson-xavier-nx-devkit-emmc` for BOXER-8250AI and BOXER-8251AI
 
 So, for example, the command for BOXER-8251AI is:
 
