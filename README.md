@@ -7,6 +7,7 @@ First release
 Boards supported:
 
 ![BOXER-8251AI](https://www.aaeon.com/_media/tmb_200511_tgvakc.jpg) ![BOXER-8221AI](https://www.aaeon.com/_media/tmb_200323_6rboad.jpg) ![BOXER-8220AI](https://www.aaeon.com/_media/tmb_200323_s2ho8e.jpg)
+
 [AAEON NVIDIA AI Solutions](https://www.aaeon.com/en/c/aaeon-nvidia-ai-solutions)
 
 * Aaeon BOXER-8220AI
