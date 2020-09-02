@@ -1,0 +1,117 @@
+diff --git a/Clearlooks/matchbox/Makefile.am b/Clearlooks/matchbox/Makefile.am
+index 83845ae..234cf06 100644
+--- a/Clearlooks/matchbox/Makefile.am
++++ b/Clearlooks/matchbox/Makefile.am
+@@ -13,12 +13,7 @@ paneltile.png \
+ right.png 
+ 
+ themesdir = $(datadir)/themes/Clearlooks/matchbox
+-themes_DATA = theme.xml $(pngs) theme.desktop
++themes_DATA = theme.xml $(pngs)
+ 
+-EXTRA_DIST = theme.xml $(pngs) theme.desktop.in
++EXTRA_DIST = theme.xml $(pngs)
+ 
+-theme.desktop: theme.desktop.in
+-	sed -e "s,PREFIX,@prefix@," theme.desktop.in > theme.desktop
+-
+-clean:
+-	rm -f theme.desktop
+diff --git a/Industrial/matchbox/Makefile.am b/Industrial/matchbox/Makefile.am
+index 2a269dc..82f93ea 100644
+--- a/Industrial/matchbox/Makefile.am
++++ b/Industrial/matchbox/Makefile.am
+@@ -4,12 +4,6 @@ pngs = \
+ 	bottom-left-6x6.png      title-left-6x23.png   mbnoapp.png
+ 
+ themesdir = $(datadir)/themes/Industrial/matchbox
+-themes_DATA = theme.xml $(pngs) theme.desktop
++themes_DATA = theme.xml $(pngs)
+ 
+-EXTRA_DIST = theme.xml $(pngs) theme.desktop.in
+-
+-theme.desktop: theme.desktop.in
+-	sed -e "s,PREFIX,@prefix@," theme.desktop.in > theme.desktop
+-
+-clean:
+-	rm -f theme.desktop
++EXTRA_DIST = theme.xml $(pngs)
+diff --git a/ape/matchbox/Makefile.am b/ape/matchbox/Makefile.am
+index 6e4034f..b2b6a22 100644
+--- a/ape/matchbox/Makefile.am
++++ b/ape/matchbox/Makefile.am
+@@ -6,7 +6,7 @@ pngs = 19x17-closebuttonup.png \
+ 	title-right-6x23.png
+ 
+ themesdir = $(datadir)/themes/ape/matchbox
+-themes_DATA = theme.xml $(pngs) theme.desktop
++themes_DATA = theme.xml $(pngs)
+ 
+-EXTRA_DIST = theme.xml $(pngs) theme.desktop
++EXTRA_DIST = theme.xml $(pngs)
+ 
+diff --git a/borillo/matchbox/Makefile.am b/borillo/matchbox/Makefile.am
+index 118f342..502acba 100644
+--- a/borillo/matchbox/Makefile.am
++++ b/borillo/matchbox/Makefile.am
+@@ -1,7 +1,7 @@
+ pngs = blank.png  close.png  minimise.png  next.png prev.png
+ 
+ themesdir = $(datadir)/themes/borillo/matchbox
+-themes_DATA = theme.xml $(pngs) theme.desktop
++themes_DATA = theme.xml $(pngs)
+ 
+-EXTRA_DIST = theme.xml $(pngs) theme.desktop
++EXTRA_DIST = theme.xml $(pngs)
+ 
+diff --git a/expose/matchbox/Makefile.am b/expose/matchbox/Makefile.am
+index d58a22f..b94c7c7 100644
+--- a/expose/matchbox/Makefile.am
++++ b/expose/matchbox/Makefile.am
+@@ -4,12 +4,6 @@ bottom-right.png  button-inactive.png  menubg.png      title-bar.png   \
+ bottom.png        left-edge.png        right-edge.png
+ 
+ themesdir = $(datadir)/themes/expose/matchbox
+-themes_DATA = theme.xml $(pngs) theme.desktop
++themes_DATA = theme.xml $(pngs)
+ 
+-EXTRA_DIST = theme.xml $(pngs) theme.desktop.in
+-
+-theme.desktop: theme.desktop.in
+-	sed -e "s,PREFIX,@prefix@," theme.desktop.in > theme.desktop
+-
+-clean:
+-	rm -f theme.desktop
++EXTRA_DIST = theme.xml $(pngs)
+diff --git a/mbcrystal/matchbox/Makefile.am b/mbcrystal/matchbox/Makefile.am
+index 46638e7..e900772 100644
+--- a/mbcrystal/matchbox/Makefile.am
++++ b/mbcrystal/matchbox/Makefile.am
+@@ -5,12 +5,6 @@ pngs =  buttsmallmaxdown.png  next.png       topleft.png \
+ 	buttsmallclosedown.png  minimise.png  noappicon.png 
+ 
+ themesdir = $(datadir)/themes/mbcrystal/matchbox
+-themes_DATA = theme.xml $(pngs) theme.desktop
++themes_DATA = theme.xml $(pngs)
+ 
+-EXTRA_DIST = theme.xml $(pngs) theme.desktop.in
+-
+-theme.desktop: theme.desktop.in
+-	sed -e "s,PREFIX,@prefix@," theme.desktop.in > theme.desktop
+-
+-clean:
+-	rm -f theme.desktop
++EXTRA_DIST = theme.xml $(pngs)
+diff --git a/mbssstudiopro/matchbox/Makefile.am b/mbssstudiopro/matchbox/Makefile.am
+index ce463f1..d1768ed 100644
+--- a/mbssstudiopro/matchbox/Makefile.am
++++ b/mbssstudiopro/matchbox/Makefile.am
+@@ -4,6 +4,6 @@ pngs =  button-up.png titlebar-tile.png \
+         buttsmallmaxdown.png buttsmallclosedown.png
+ 
+ themesdir = $(datadir)/themes/mbssstudiopro/matchbox
+-themes_DATA = theme.xml $(pngs) theme.desktop
++themes_DATA = theme.xml $(pngs)
+ 
+-EXTRA_DIST = theme.xml $(pngs) theme.desktop
++EXTRA_DIST = theme.xml $(pngs)
