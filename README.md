@@ -89,7 +89,7 @@ Poky linux login is the standard one:
 
 
 # Contributing
--------
+
 Please use GitHub (https://github.com/koansoftware/meta-aaeonboxer) to submit issues or pull requests, or add to the documentation on the wiki. Contributions are welcome!
 
 ------
