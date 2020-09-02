@@ -80,7 +80,15 @@ To flash the built image onto the BOXER devices internal storage we need to do t
   NB: the script will ask the **sudo** password
 * At the end of the flashing procedure, if there are no errors, disconnect and reconnect the power cable. The board will run the image just flashed.
 
-Contributing
+## System Login
+
+Poky linux login is the standard one:
+
+* Username : root
+* Password : <no password, press enter>
+
+
+# Contributing
 -------
 Please use GitHub (https://github.com/koansoftware/meta-aaeonboxer) to submit issues or pull requests, or add to the documentation on the wiki. Contributions are welcome!
 
