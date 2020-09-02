@@ -1,12 +1,14 @@
-![KoanSoftware.com](http://koansoftware.com/pub/img/koan-header.png)
-
-(C)2020 Copyright - KOAN sas - <https://koansoftware.com>
-
 # BSP layer for AAEON BOXER based on NVIDIA platforms
+
+![aaeon.com](https://www.aaeon.com/emgz/client_logo.png)
 
 First release
 
 Boards supported:
+
+![BOXER-8251AI](https://www.aaeon.com/_media/tmb_200511_tgvakc.jpg) ![BOXER-8221AI](https://www.aaeon.com/_media/tmb_200323_6rboad.jpg) ![BOXER-8220AI](https://www.aaeon.com/_media/tmb_200323_s2ho8e.jpg)
+[AAEON NVIDIA AI Solutions](https://www.aaeon.com/en/c/aaeon-nvidia-ai-solutions)
+
 * Aaeon BOXER-8220AI
 * Aaeon BOXER-8221AI
 * Aaeon BOXER-8251AI
@@ -66,3 +68,10 @@ To flash the built image onto the BOXER devices internal storage we need to do t
   NB: the script will ask the **sudo** password
 * At the end of the flashing procedure, if there are no errors, disconnect and reconnect the power cable. The board will run the image just flashed.
 
+Contributing
+-------
+Please use GitHub (https://github.com/koansoftware/meta-aaeonboxer) to submit issues or pull requests, or add to the documentation on the wiki. Contributions are welcome!
+
+------
+
+_(C)2020 Copyright - KOAN sas - <https://koansoftware.com>_
