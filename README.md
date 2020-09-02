@@ -21,9 +21,15 @@ LAYERSERIES_COMPAT: dunfell
 
 # Build instructions
 
+Move into the build directory already setup with the [inital setup step](https://github.com/koansoftware/koan-aaeon-bsp-repo), for example:
+
+```
+$ cd ${HOME}/yocto-aaeon-dunfell
+```
+
 ## First setup
 
-To initialize a build directory and related environment enter in the main Yocto directory and use the `setup-environment` script:
+Initialize a build directory and related environment enter in the main Yocto directory and use the `setup-environment` script:
 
 ```bash
 $ MACHINE=... DISTRO=aaeon source setup-environment MY_BUILDDIR
@@ -49,6 +55,11 @@ $ source setup-environment build
 ```
 
 Now you can build one of the included images, e.g.
+
+```bash
+$ bitbake core-image-minimal
+```
+or 
 
 ```bash
 $ bitbake core-image-minimal-xfce
