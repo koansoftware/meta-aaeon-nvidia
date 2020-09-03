@@ -92,7 +92,7 @@ Poky linux login is the standard one:
 
 # Contributing
 
-Please use GitHub (https://github.com/koansoftware/meta-aaeon-nvidia-boxer) to submit issues or pull requests, or add to the documentation on the wiki. Contributions are welcome!
+Please use GitHub (https://github.com/koansoftware/meta-aaeon-nvidia) to submit issues or pull requests, or add to the documentation on the wiki. Contributions are welcome!
 
 ------
 
