@@ -75,9 +75,11 @@ To flash the built image onto the BOXER devices internal storage we need to do t
 * connect a Micro-USB cable to the build PC and to the OS flash port on the BOXER board
 * hold the RECOVERY button on the BOXER and connect the power cable
 * continue to hold the RECOVERY button for two seconds, then release it
-* start the flash procedure launching `scripts/deploy-aaeon.sh`. For example, for a BOXER-8820AI (Jetson Nano platform), if we built the `core-image-minimal-xfce` image in `build` directory, the command is:
+* start the flash procedure launching `scripts/deploy-aaeon.sh`. For example, for a BOXER-8820AI (Jetson Nano platform), if we built the `core-image-minimal-xfce` image in `build` directory.
+
+Please verify that you are in the build directory before running the following command:
   ```bash
-  $ scripts/deploy-sd-aaeon.sh core-image-minimal-xfce jetson-nano-qspi-sd ../../build"
+  $ ../sources/meta-aaeon-nvidia/scripts/deploy-sd-aaeon.sh core-image-minimal-xfce jetson-nano-qspi-sd ."
   ```
   NB: the script will ask the **sudo** password
 * At the end of the flashing procedure, if there are no errors, disconnect and reconnect the power cable. The board will run the image just flashed.
