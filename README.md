@@ -79,7 +79,7 @@ To flash the built image onto the BOXER devices internal storage we need to do t
 
 Please verify that you are in the build directory before running the following command:
   ```bash
-  $ ../sources/meta-aaeon-nvidia/scripts/deploy-sd-aaeon.sh core-image-minimal-xfce jetson-nano-qspi-sd ."
+  $ ../sources/meta-aaeon-nvidia/scripts/deploy-sd-aaeon.sh core-image-minimal-xfce jetson-nano-qspi-sd .
   ```
   NB: the script will ask the **sudo** password
 * At the end of the flashing procedure, if there are no errors, disconnect and reconnect the power cable. The board will run the image just flashed.
