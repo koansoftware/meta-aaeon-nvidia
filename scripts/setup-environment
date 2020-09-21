@@ -144,7 +144,7 @@ if [ "$build_dir_setup_enabled" = "true" ]; then
     mv conf/local.conf conf/local.conf.sample
 
     # Generate the local.conf based on the Yocto defaults
-    TEMPLATES=$CWD/sources/meta-aaeonboxer/conf/template
+    TEMPLATES=$CWD/sources/meta-aaeon-nvidia/conf/template
     grep -v '^#\|^$' conf/local.conf.sample > conf/local.conf
     cat >> conf/local.conf <<EOF
 DL_DIR ?= "\${BSPDIR}/downloads/"
