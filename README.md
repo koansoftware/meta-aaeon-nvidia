@@ -72,7 +72,7 @@ $ bitbake core-image-minimal-xfce
 To flash the built image onto the BOXER devices internal storage we need to do the following steps:
 
 * disconnect the power cable on the BOXER board
-* connect a Micro-USB cable to the build PC and to the OS flash port on the BOXER board
+* connect the USB type-A port of a Micro-USB cable to the build PC
 * hold the RECOVERY button on the BOXER and connect the power cable
 * continue to hold the RECOVERY button for two seconds, then release it
 * start the flash procedure launching `scripts/deploy-aaeon.sh`. For example, for a BOXER-8820AI (Jetson Nano platform), if we built the `core-image-minimal-xfce` image in `build` directory.
