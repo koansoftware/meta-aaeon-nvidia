@@ -149,6 +149,9 @@ if [ "$build_dir_setup_enabled" = "true" ]; then
     cat >> conf/local.conf <<EOF
 DL_DIR ?= "\${BSPDIR}/downloads/"
 INHERIT += "rm_work"
+# Workaround (7a8cf92) in place for this issue in master and gatesgarth. 
+# tegra-minimal-initramfs : add temporary workaround for hashing issue
+BB_SIGNATURE_HANDLER = "OEBasicHash"
 EOF
     # Change settings according environment
     sed -e "s,MACHINE ??=.*,MACHINE ??= '$MACHINE',g" \
