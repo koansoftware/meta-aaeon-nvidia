@@ -98,4 +98,4 @@ Please use GitHub (https://github.com/koansoftware/meta-aaeon-nvidia) to submit 
 
 ------
 
-_(C)2020 Copyright - KOAN sas - <https://koansoftware.com>_
+_(C)2020-2021 Copyright - KOAN sas - <https://koansoftware.com>_
